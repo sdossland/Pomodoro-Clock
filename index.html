@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="logic.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="row" id="all">
+    <div class="row">
+        <h1>Pomodoro Clock</h1>
+    </div>
+    <div class="row" id="change">
+        <div class="col-md-4"></div>
+        <div class="col-md-2 session">
+            <div class="row">Session</div>
+            <div class="row addsub">
+                <div class="col-md-4" id="subtractSes">-</div>
+                <div class="col-md-4" id="sessionTime">
+                    <span>25</span>
+                </div>
+                <div class="col-md-4" id="addSes">+</div>
+            </div>
+        </div>
+        <div class="col-md-2 break">
+            <div class="row">Break</div>
+            <div class="row addsub">
+                <div class="col-md-4" id="subtractBre">-</div>
+                <div class="col-md-4" id="breakTime" >5</div>
+                <div class="col-md-4" id="addBre">+</div>
+            </div>
+        </div>
+        <div class="col-md-4 space"></div>
+    </div>
+    <div class="row" id="timer">
+        <div class="col-md-5"></div>
+        <div class="col-md-2" data-percent="5">
+            <div class="clock-radial progress-0">
+                <div class="overlay">
+                    <div class="row">
+                        <span class="status"></span>
+                    </div>
+                    <div>
+                        <span class="time"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-5"></div>
+    </div>
+    <div class="row" id="controls">
+        <div class="col-md-5"></div>
+        <div class="col-md-2 spacing">
+            <i class="fa fa-play fa-3x" id="playBtn" aria-hidden="true"></i>
+            <i class="fa fa-stop fa-3x" id="stopBtn" aria-hidden="true"></i>
+        </div>
+        <div class="col-md-5"></div>
+    </div>
+</div>
+</body>
+</html>

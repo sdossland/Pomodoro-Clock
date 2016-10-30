@@ -1,0 +1,197 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #fff;
+}
+
+#all {
+    height: 100vh;
+    background: linear-gradient(#00334d, #2eb8b8);
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    height: 100px;
+}
+
+#change {
+    font-size: 18px;
+}
+
+#sessionTime,
+#breakTime {
+    font-size: 36px;
+    padding: 0px 0px 0px 0px;
+}
+
+.addsub {
+    height: 51px;
+}
+
+#subtractBre, #subtractSes {
+    padding-left: 50px;
+    padding-right: 0px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#addBre, #addSes {
+    padding-left: 0px;
+    padding-right: 50px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#subtractBre:hover, #addBre:hover, #subtractSes:hover, #addSes:hover {
+    color: #ffd633;
+    font-weight: bold;
+    font-size: 145%;
+}
+
+.col-md-2 {
+    text-align: center;
+}
+.space {
+    height: 120px;
+}
+.clockFace {
+    border-radius: 50%;
+    border: solid;
+    border-width: 7px;
+    height: 230px;
+}
+.spacer {
+    height: 30px;
+}
+.status {
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+}
+#playBtn {
+    margin-left: -40px;
+    margin-right: 40px;
+}
+#controls, .spacing {
+    margin-top: 20px;
+    height: 60px;
+}
+
+/* -------------------------------------
+ * Bar container
+ * ------------------------------------- */
+.clock-radial {
+    float: left;
+    margin-right: 30px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #ffd633;
+}
+
+/* -------------------------------------
+ * Optional centered circle w/text
+ * ------------------------------------- */
+.clock-radial .overlay {
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 24px;
+    margin-top: 24px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+/* -------------------------------------
+ * Mixin for progress-% class
+ * ------------------------------------- */
+.progress-0 {
+    background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(126deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-5 {
+    background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(126deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-10 {
+    background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(126deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-15 {
+    background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(144deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-20 {
+    background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(162deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-25 {
+    background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(180deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-30 {
+    background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(198deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-35 {
+    background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(216deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-40 {
+    background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(234deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-45 {
+    background-image: linear-gradient(90deg, #2f3439 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(252deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+/*
+.progress-50 {
+    background-image: linear-gradient(-90deg, #ffd633 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-55 {
+    background-image: linear-gradient(-72deg, #ffd633 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-60 {
+    background-image: linear-gradient(-54deg, #ffd633 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-65 {
+    background-image: linear-gradient(-36deg, #ffd633 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-70 {
+    background-image: linear-gradient(-18deg, #ffd633 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}*/
+
+.progress-75 {
+    background-image: linear-gradient(0deg, #ffd633 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-80 {
+    background-image: linear-gradient(18deg, #ffd633 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-85 {
+    background-image: linear-gradient(36deg, #ffd633 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-90 {
+    background-image: linear-gradient(54deg, #ffd633 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-95 {
+    background-image: linear-gradient(72deg, #ffd633 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
+
+.progress-100 {
+    background-image: linear-gradient(90deg, #ffd633 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #ffd633 50%, #2f3439 50%, #2f3439);
+}
